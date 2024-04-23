@@ -9,10 +9,81 @@
 </head>
 <body>
     <header>
-        <div class="line-container">
+        <div class="line-container" id="line-container">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+        </div>
+        <div class="list" id="list">
+            <div class="arrow"></div>
+            <ul>
+                <li>
+                    <div>
+                        <img src="./Assets/ap.png" alt="apple">
+                    </div>
+                    <span>Supermarket</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/be.png" alt="beauty">
+                    </div>
+                    <span>Health & Beauty</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="/Assets/ho.png" alt="house">
+                    </div>
+                    <span>Home & Office</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/po.png" alt="Appliances">
+                    </div>
+                    <span>Appliance</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/ph.png" alt="phone">
+                    </div>
+                    <span>Phone & Tablets</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/tv.png" alt="">
+                    </div>
+                    <span>Computing</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/tv1.png" alt="radio">
+                    </div>
+                    <span>Electronics</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/ch.png" alt="child">
+                    </div>
+                    <span>Baby Products</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/ga.png" alt="game">
+                    </div>
+                    <span>Gaming</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/gy.png" alt="gym">
+                    </div>
+                    <span>Sporting Goods</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./Assets/mo.png" alt="more">
+                    </div>
+                    <span>Other categories</span>
+                </li>
+            </ul>
         </div>
         
         <div class="jumia-logo">
@@ -20,101 +91,122 @@
         </div>
 
         <form action="">
-            <input type="text">
-            <button></button>
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Search products, brands and categories">
+            <button>search</button>
         </form>
 
         <div class="logos">
             <i class="ri-search-line"></i>
-            <i class="ri-user-2-line"></i>
+            <i class="ri-user-follow-line"></i>
             <i class="ri-shopping-cart-2-line"></i>
+        </div>
+        <div id="sec-logo" class="logos">
+            <div>
+                <div class="small-cicle"></div>
+                <i class="ri-user-follow-line"></i>
+                <span>Hi, Mukorode</span>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div>
+                <i class="ri-question-line"></i>
+                <span>Help</span>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div>
+                <div id="small-cicle">1</div>
+                <i class="ri-shopping-cart-2-line"></i>
+                <span>Cart</span>
+            </div> 
         </div>
     </header>
     <div id="bod">
         <div id="Data">
-            <div class="img-container">
-                <img src="" alt="jumia product" id="imgElement" style="display: none;">
-                <div class="Lin"></div>
-                <p> SHARE THIS PRODUCT</p>
-                <div class="fas">
-                    <i class="ri-facebook-fill"></i>
-                    <i class="ri-twitter-fill"></i>
+            <div class="Data">
+                <div class="img-container">
+                    <img src="" alt="jumia product" id="imgElement" style="display: none;">
+                    <div class="Lin"></div>
+                    <p> SHARE THIS PRODUCT</p>
+                    <div class="fas">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-twitter-fill"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="title">
-                <div class="store">
-                    <p>official store </p>
-                    <p>Pay on Delivery </p>
-                </div>
-                
-                <div class="title-container">
-                    <p id="title"></p>
-                </div>
-                <p>Brand: <span>Fjallraven | Similar products from Fjallraven</span>  </p>
-                <div class="sales-container">
-                    <div class="red-container">
-                        <div>
-                            <img src="./Assets/tag1.png" alt="">
-                        </div>
-                        <p> Flash sales</p>
+                <div class="title">
+                    <div class="store">
+                        <p>official store </p>
+                        <p>Pay on Delivery </p>
+                    </div>
+                    
+                    <div class="title-container">
+                        <p id="title"></p>
+                    </div>
+                    <p>Brand: <span>Fjallraven | Similar products from Fjallraven</span>  </p>
+                    <div class="sales-container">
+                        <div class="red-container">
+                            <div>
+                                <img src="./Assets/tag1.png" alt="">
+                            </div>
+                            <p> Flash sales</p>
 
-                        <p> Time Left: 13h : 48m : 08s</p>
-                    </div>
-                    <div class="price">
-                        <h1>₦ 105,990</h1> <s> ₦ 150,000</s> <span>-29%</span>
-                    </div>
-                    <div class="text-bar">
-                        <p>25 items left</p>
-                        <div class="bar-container">
-                            <div class="bar"></div>
+                            <p> Time Left: 13h : 48m : 08s</p>
+                        </div>
+                        <div class="price">
+                            <h1>₦ 105,990</h1> <s> ₦ 150,000</s> <span>-29%</span>
+                        </div>
+                        <div class="text-bar">
+                            <p>25 items left</p>
+                            <div class="bar-container">
+                                <div class="bar"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p id="shipping">+ shipping from ₦ 2,730 to LEKKI-AJAH (SANGOTEDO)<span>see option</span></p>
-                <div class="share">
-                    <div class="star">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
+                    <p id="shipping">+ shipping from ₦ 2,730 to LEKKI-AJAH (SANGOTEDO)<span>see option</span></p>
+                    <div class="share">
+                        <div class="star">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                        <p>(11 verified rating)</p>
+                        <div class="share-logo">
+                            <i class="ri-share-fill"></i>
+                            <i class="ri-heart-line"></i>
+                        </div>
                     </div>
-                    <p>(11 verified rating)</p>
-                    <div class="share-logo">
-                        <i class="ri-share-fill"></i>
-                        <i class="ri-heart-line"></i>
+                    <div class="first-promo">
+                        <p>PROMOTION</p>
                     </div>
-                </div>
-                <div class="first-promo">
-                    <p>PROMOTION</p>
-                </div>
-                <div class="btn">
-                    <button>
-                        <i class="ri-phone-fill"></i>
-                    </button>
-                    <div>
-                        <i class="ri-shopping-cart-2-line"></i>
-                        <p>ADD TO CART</p>
+                    <div class="btn">
+                        <button>
+                            <i class="ri-phone-fill"></i>
+                        </button>
+                        <div>
+                            <i class="ri-shopping-cart-2-line"></i>
+                            <p>ADD TO CART</p>
+                        </div>
                     </div>
-                </div>
-                <div class="Lin"></div>
-                <div class="Lin" style="margin-top: 0;"></div>
-                <div class="Lin" style="margin-top: 0;"></div>
+                    <div class="Lin"></div>
+                    <div class="Lin" style="margin-top: 0;"></div>
+                    <div class="Lin" style="margin-top: 0;"></div>
 
-                <div class="second-promo">
-                    <p>PROMOTIONS</p>
-                    <div>
+                    <div class="second-promo">
+                        <p>PROMOTIONS</p>
                         <div>
-                            <i class="ri-star-fill"></i>
-                            <span>Call 07006000000 To Order</span>
-                        </div>
-                        <div>
-                            <i class="ri-star-fill"></i>
-                            <span>Need extra money? Loan up to ₦500,000 on JumiaPay Android app.</span>
-                        </div>
-                        <div>
-                            <i class="ri-star-fill"></i>
-                            <span>Enjoy cheaper shipping fees when you select a PickUp Station at checkout.</span>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <span>Call 07006000000 To Order</span>
+                            </div>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <span>Need extra money? Loan up to ₦500,000 on JumiaPay Android app.</span>
+                            </div>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <span>Enjoy cheaper shipping fees when you select a PickUp Station at checkout.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,12 +215,61 @@
             <div class="discription">
                 <h3>DESCRIPTION</h3>
 
-                <P id="description"> </P>
+                <P id="description"> Fjällräven, born from the rugged landscapes of Sweden, embodies the spirit of exploration and adventure. Our brand is synonymous with quality craftsmanship, innovative design, and a deep respect for the environment.
+                At Fjällräven, we believe that every journey deserves the perfect companion. That's why we meticulously design and craft each of our bags to be as functional as they are stylish. Whether you're trekking through the wilderness, navigating the urban jungle, or simply commuting to work, our bags are built to withstand the rigors of everyday life while keeping you organized and comfortable.</P>
+            </div>
+
+            <div class="report">
+                <p>Report incorrect product information</p>
             </div>
             
         </div>
-        <div class=" Product">
+        <div class="Product">
             <h1>PRODUCTS</h1>
+            <div class="others">
+                <div>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="other-products">
+                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
+                    <p> Men's clothing</p>
+                    <p>#900</p>
+                    <button>View product</button>
+                </div>
+            </div>
+            <div class="others">
+                <div>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="other-products">
+                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
+                    <p> Men's clothing</p>
+                    <p>#900</p>
+                    <button>View product</button>
+                </div>
+            </div>
+            <div class="others">
+                <div>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="other-products">
+                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
+                    <p> Men's clothing</p>
+                    <p>#900</p>
+                    <button>View product</button>
+                </div>
+            </div>
+            <div class="others">
+                <div>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="other-products">
+                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
+                    <p> Men's clothing</p>
+                    <p>#900</p>
+                    <button>View product</button>
+                </div>
+            </div>
             <div class="others">
                 <div>
                     <i class="ri-star-fill"></i>
