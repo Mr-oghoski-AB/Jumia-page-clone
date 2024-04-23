@@ -43,7 +43,7 @@ header {
 }
 .list {
     position: fixed;
-    top: 7.5%;
+    top: 9%;
     background-color: white;
     list-style: none;
     display: none;
