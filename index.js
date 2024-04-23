@@ -3,7 +3,7 @@ const imgElement = document.getElementById("imgElement")
 const title = document.getElementById('title')
 const description = document.getElementById('description')
 
-//fecht
+
 fetch(Data)
     .then(response => response.json())
     .then(data => {
@@ -31,12 +31,6 @@ function toggleMiniBar() {
     }
   }
 
-// document.addEventListener ('click', (e) => {
-//     if (list.style.display === "block"){
-//         list.style.display = "none";
-//         console.log('it worked');
-//     }
-// })
 
 
     
