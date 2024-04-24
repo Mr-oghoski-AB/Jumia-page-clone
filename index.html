@@ -94,8 +94,8 @@
 
         <form action="">
             <i class="ri-search-line"></i>
-            <input type="text" placeholder="Search products, brands and categories">
-            <button>search</button>
+            <input type="text" placeholder="Search products, brands and categories" id="search">
+            <button onclick="searchProduct()">search</button>
         </form>
 
         <div class="logos">
@@ -107,7 +107,7 @@
             <div>
                 <div class="small-cicle"></div>
                 <i class="ri-user-follow-line"></i>
-                <span>Hi, Mukorode</span>
+                <span>Hi, Imetowa</span>
                 <i class="ri-arrow-down-s-line"></i>
             </div>
             <div>
@@ -138,12 +138,13 @@
                     <div class="store">
                         <p>official store </p>
                         <p>Pay on Delivery </p>
+                        <i class="ri-heart-line"></i>
                     </div>
                     
                     <div class="title-container">
                         <p id="title"></p>
                     </div>
-                    <p>Brand: <span>Fjallraven | Similar products from Fjallraven</span>  </p>
+                    <p>Brand: <span id="category">Fjallraven | Similar products from Fjallraven</span>  </p>
                     <div class="sales-container">
                         <div class="red-container">
                             <div>
@@ -151,15 +152,15 @@
                             </div>
                             <p> Flash sales</p>
 
-                            <p> Time Left: 13h : 48m : 08s</p>
+                            <p id="countdown"> Time Left: 13h : 48m : 08s</p>
                         </div>
                         <div class="price">
-                            <h1>₦ 105,990</h1> <s> ₦ 150,000</s> <span>-29%</span>
+                            <h1 id="price">₦ 105,990</h1> <s id="s-price"> ₦ 150,000</s> <span>-29%</span>
                         </div>
                         <div class="text-bar">
-                            <p>25 items left</p>
-                            <div class="bar-container">
-                                <div class="bar"></div>
+                            <p id="itemsLeft">25 items left</p>
+                            <div class="bar-container" id="barContainer">
+                                <div class="bar" id="bar"></div>
                             </div>
                         </div>
                     </div>
@@ -226,57 +227,13 @@
             </div>
             
         </div>
-        <div class="Product">
+        <div class="Product" id="Product">
             <h1>PRODUCTS</h1>
-            <div class="others">
+            <div class="others" id="others">
                 <div>
                     <i class="ri-star-fill"></i>
                 </div>
-                <div class="other-products">
-                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
-                    <p> Men's clothing</p>
-                    <p>#900</p>
-                    <button>View product</button>
-                </div>
-            </div>
-            <div class="others">
-                <div>
-                    <i class="ri-star-fill"></i>
-                </div>
-                <div class="other-products">
-                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
-                    <p> Men's clothing</p>
-                    <p>#900</p>
-                    <button>View product</button>
-                </div>
-            </div>
-            <div class="others">
-                <div>
-                    <i class="ri-star-fill"></i>
-                </div>
-                <div class="other-products">
-                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
-                    <p> Men's clothing</p>
-                    <p>#900</p>
-                    <button>View product</button>
-                </div>
-            </div>
-            <div class="others">
-                <div>
-                    <i class="ri-star-fill"></i>
-                </div>
-                <div class="other-products">
-                    <p>Mens Casual Premium Slim Fit T-Shirts</p>
-                    <p> Men's clothing</p>
-                    <p>#900</p>
-                    <button>View product</button>
-                </div>
-            </div>
-            <div class="others">
-                <div>
-                    <i class="ri-star-fill"></i>
-                </div>
-                <div class="other-products">
+                <div class="other-products" id="other-products">
                     <p>Mens Casual Premium Slim Fit T-Shirts</p>
                     <p> Men's clothing</p>
                     <p>#900</p>
