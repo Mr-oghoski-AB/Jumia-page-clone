@@ -57,7 +57,7 @@ function toggleMiniBar() {
 
 
 // Set the date and time for the countdown (in UTC format)
-const countdownDate = new Date('2024-12-31T23:59:59').getTime();
+const countdownDate = new Date('2024-04-26T23:59:59').getTime();
 
 // Update the countdown every second
 const countdown = setInterval(function() {
@@ -68,8 +68,6 @@ const countdown = setInterval(function() {
   // Calculate the time remaining until the countdown date
   const distance = countdownDate - now;
 
-  console.log(distance)
-
   // Calculate the days, hours, minutes, and seconds remaining
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -77,7 +75,7 @@ const countdown = setInterval(function() {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the countdown in the element with id="countdown"
-  document.getElementById('countdown').innerHTML = 'Time Left:' + days + 'd ' + hours + 'h '
+  document.getElementById('countdown').innerHTML = 'Time Left: ' + days + 'd ' + hours + 'h '
   + minutes + 'm ' + seconds + 's ';
 
   // If the countdown is finished, display a message
